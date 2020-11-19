@@ -29,11 +29,11 @@ class AllRequests(Resource):
 			model = load_model('model-018.model')
 			face_clsfr = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-			cap = cv2.VideoCapture('test.mp4')
+			cap = cv2.VideoCapture('something.mp4')
 			cap.set(3, 640)
 			cap.set(4, 480)
 
-			fourcc = cv2.VideoWriter_fourcc(*'MP4V')
+			fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 
 			if (cap.isOpened() == False):
 				print("Unable to read camera feed")
